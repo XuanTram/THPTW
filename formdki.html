@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form đăng ký</title>
+</head>
+<body>
+    <style>
+    input[type = text],input[type = password]{
+        width: 100%;
+        padding: 4px;
+        border: 1px solid black;
+        border-radius: 5px;
+        resize: vertical;
+        height: 20px;
+        display: inline-block;
+    }
+    label {
+        padding: 12px 12px 12px 0;
+        display: inline-block;
+    }
+    input[type=submit] {
+        padding: 12px 20px;
+        border: 1px solid;
+        border-radius: 4px;
+        cursor: pointer;
+        float: center;
+    }
+    .container {
+     border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 60%;
+    margin: 0px 200px
+}
+    .col-25 {
+        float: left;
+        width: 25%;
+        margin-top: 6px;
+    }
+
+    .col-50 {
+        float: left;
+        width: 50%;
+        margin-top: 6px;
+    }
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    h2{
+        background-color: blue;
+        color: white;
+        width: 100%;       
+    }
+ 
+    </style>
+    <div class="container">
+
+        <form action="action_form.php">
+            <h1 style="text-align: center">ĐĂNG KÝ KHÁCH HÀNG</h1>
+            <h2>Thông tin đăng nhập</h2>
+            <div class="row">
+                <div class="col-25">
+                    <label for="username">Tên đăng nhập</label>
+                </div>
+                <div class="col-50">
+                    <input type="text" name="username" >
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="password">Mật khẩu</label>
+                </div>
+                <div class="col-50">
+                    <input type="password" name="password">
+                </div>
+            </div>
+            <div class="row">
+                 <div class="col-25">
+                     <label for="nhaplai">Nhập lại mật khẩu</label>
+                 </div>
+                 <div class="col-50">
+                     <input type="password" name="nhaplai">
+                 </div>   
+            </div>
+            <h2>Thông tin chi tiết cá nhân </h2>
+            <div class="row">
+                <div class="col-25">
+                    <label for="name">Họ và tên khách hàng</label>
+                </div>
+                <div class="col-50">
+                    <input type="text" name="name" required>
+                </div>
+            </div>
+            <div class="row">
+                    <div class="col-25">
+                    <label for="birthday">Ngày sinh</label>
+                </div>
+                <div class="col-50">
+                    <input type="text" name="birthday" required>
+                </div>
+            </div>   
+                
+            <div class="row">
+                <div class="col-25">
+                    <label for="gender">Giới tính </label>
+                </div>
+                <div class="col-50">
+                    <input type="radio" name="gender"  value="Male">Nam
+                    <input type="radio" name="gender"  value="Female">Nữ  
+                </div>
+            </div>
+                
+            <div class="row">
+                <div class="col-25">
+                     <label for="mail">Địa chỉ mail</label>
+                </div>
+                <div class="col-50">
+                    <input type="text" name="mail"  required>
+                </div>
+            </div>
+                
+            <div class="row">
+                <div class="col-25">
+                        <label for="safari">Thu nhập</label>
+                </div>
+                <div class="col-50">
+                        <input type="text" name="safari" >
+                </div></div>
+                
+                <div style="margin: 0px 350px ">
+                    <input type="submit" name="submit" value="Đăng ký">
+                </div>
+                 
+                        <p style="text-align:center">Danh sách các lỗi</p>
+                    <ul align: center>
+                        <li>Họ tên không được rỗng</li>
+                        <li>Ngày sinh không hợp lệ</li>
+                        <li>Email không hợp lệ</li>
+                    </ul>
+                
+            
+
+        </form>
+    </div>
+</body>
+</html>
