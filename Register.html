@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="style.css" rel="stylesheet">
+    <title>Register</title>
+</head>
+<body>
+        <style>
+                span.note{
+                    color: blue;
+                }
+                span.note1{
+                    color: red;
+                }
+            </style>
+    <div id="main">
+        <div id="header">
+            <img width = 100% height = 250px src="images/2.png" alt="">
+        </div>
+        <div id="left">
+            <hr>
+            <p>
+                User name:
+                <input type="text" name="User">
+            </p>
+
+            <p>
+                Password:
+                <input type="text" name="Password" style="margin-left: 7px">
+            </p>	
+
+            <p style="text-align: center">
+                <input type="button" name="button1" value="Reset">
+                <input type="button" name="button2" value="Login">
+            </p>
+            
+            <a href="Home.html">Home</a><br>
+            <a href="Register.html">Register</a><br>
+            <a href="Introduction.html">Introduction</a><br>
+            <a href="Contact.html">Contact</a><br>
+            <a href="Help.html">Help</a>
+        </div>
+        <div id="center">
+            <h1><span class="note">Welcome to your</span><span class="note1"> Photo Site</span></h1>
+            <div class="container" >
+                <form action="" style="color: white" >
+                    <h2 style="text-align: center">Register Form</h2>
+                    <p>
+                        <div class="col-25">
+                            <label for="user">Username</label>
+                        </div>
+                        <div class="col-50">
+                            <input type="text" name="username" id="">
+                        </div>
+                    </p>
+                    <p>
+                        <div class="col-25">
+                            <label for="password">Password</label>
+                        </div>
+                        <div class="col-50">
+                            <input type="password" name="pass" id="">
+                        </div>
+                    </p>
+                    <p>
+                        <div class="col-25">
+                            <label for="confirm">Confirm Password:</label>
+                        </div>
+                        <div class="col-50">
+                            <input type="password" name="confirm" id="">
+                        </div>
+                    </p>
+                    <p>
+                        <div class="col-25">
+                            <label for="gender">Gender:</label>
+                        </div>
+                        <div class="col-50">
+                            <input type="radio" name="gender" id="">Male 
+                            <input type="radio" name="gender" id="">Female
+                        </div>
+                    </p>
+                    <p>
+                        <div class="col-25">
+                             <label for="add">Address:</label>
+                        </div>
+                        <div class="col-50">
+                            <select name="add" size="2" style="width:200px"></select>
+                        </div>
+                    </p>
+                    <p>
+                        <div class="col-25">
+                            <label for="mail">Mail:</label>
+                        </div>
+                        <div class="col-50">
+                            <input type="text" name="mail" id="">
+                        </div>
+                    </p>
+                    <div>
+                        <div class="col-25">
+                            <label for="pro">Programming Languages:</label>
+                    </div>
+                    <p>
+                        <div class="col-50">
+                            <input type="checkbox" name="" id="">PHP
+                            <input type="checkbox" name="" id="">Java
+                        </div>
+                        <br>
+                        <div class="col-50">
+                            <input type="checkbox" name="" id="">ASP.NET 
+                            <input type="checkbox" name="" id="">C++
+                        </div>
+                         
+                    </p> 
+                    </div>
+                     <br>   
+                    <p>
+                        <br>
+                        <div class="col-25">
+                                <label for="skill">Skill:</label>
+                        </div>
+                        <div class="col-50">
+                            <select name="skill" id="">
+                                <option value="">Excelent</option>
+                                <option value="">Normal</option>
+                                <option value="">Weak</option>
+                            </select>
+                        </div>
+                    </p>
+                    <p>
+                        <div class="col-50"> 
+                            <input type="reset" value="Reset">
+                            <input type="submit" value="Register">
+                        </div>
+                    </p>
+                </form>
+            </div>
+        </div>    
+        
+        </div>
+        <div id="footer">
+                
+                <div style="padding : 20px,margin = 200px">
+                    <p>Copyright(C)2003, your company name, all right reserved</p>
+                </div>
+            </div>
+    </body>
+
+</html>
